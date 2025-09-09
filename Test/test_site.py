@@ -4,14 +4,6 @@ import time
 from pages.homepage import HomePage
 from pages.product import ProductPage
 
-@pytest.fixture()
-def browser():
-    browser = webdriver.Firefox()
-    browser.maximize_window()
-    browser.implicitly_wait(3)
-    yield browser
-#Firefox - browser.close() - Firefox doesnt close himself
-
 
 
 def test_open_s6(browser):
