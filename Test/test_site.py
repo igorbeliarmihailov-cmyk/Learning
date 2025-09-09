@@ -6,7 +6,7 @@ from pages.product import ProductPage
 
 @pytest.fixture()
 def browser():
-    browser = webdriver.Edge()
+    browser = webdriver.Firefox()
     browser.maximize_window()
     browser.implicitly_wait(3)
     yield browser
